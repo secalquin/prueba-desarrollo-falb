@@ -1,6 +1,11 @@
 ### Ejecución del proyecto
 
 - Ejecutar Proyecto: **docker-compose up -d**
+- Petición de ejemplo: localhost:8080/api/v1/communes/santiago
+
+### SWAGGER URL
+
+- http://localhost:8080/api-docs/
 
 #### VARIABLES DE AMBIENTE
 
@@ -12,11 +17,11 @@
 - REDIS_TIME: 3600
 
 ### Ejecutar localmente
+
 - 1. **npm install**
 - 2. **npm run build**
 - 3. **npm run start**
 
 - Modo desarrollador: **npm run dev**
-
 
 - Evidencia de ejecución y petición de contenedor: https://prnt.sc/nEuJBjzpwqJf
