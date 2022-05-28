@@ -39,7 +39,7 @@
 - **redis**
 - **swagger-ui-express**
 
-#### Producción
+#### Desarrollo
 
 - **@babel/cli**
 - **@babel/core**
