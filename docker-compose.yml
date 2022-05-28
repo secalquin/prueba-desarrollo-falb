@@ -1,0 +1,34 @@
+version: "3"
+services:
+  main_service:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    environment:
+      NODE_ENV: development
+      URL_CURRENT: http://localhost
+      PORT: 8080
+      URL_SERVICE: https://farmanet.minsal.cl/maps/index.php/ws/getLocalesRegion?id_region=7
+      REDIS_HOST: localhost
+      REDIS_PORT: 6379
+      REDIS_TIME: 3600
+    ports:
+      - 8080:8080
+    links:
+      - redis
+    networks:
+      - api_server_default
+
+  redis:
+    image: redis:alpine
+    ports:
+      - "6379:6379"
+    volumes:
+      - ./redisdata:/data
+    entrypoint: redis-server --appendonly yes
+    restart: always
+    networks:
+      - api_server_default
+networks:
+  api_server_default:
