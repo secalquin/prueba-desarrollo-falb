@@ -1,10 +1,7 @@
 import redis from "redis";
+import globalConfig from "../config/globalConfig";
 
-const client = redis.createClient({
-  host: "localhost",
-  port: "6379",
-  //password: REDIS_PASSWORD,
-});
+const client = redis.createClient(globalConfig.REDIS_URL);
 
 //client.on("connect", () => {
 //  console.log("Connected to redis");

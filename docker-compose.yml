@@ -10,8 +10,7 @@ services:
       URL_CURRENT: http://localhost
       PORT: 8080
       URL_SERVICE: https://farmanet.minsal.cl/maps/index.php/ws/getLocalesRegion?id_region=7
-      REDIS_HOST: localhost
-      REDIS_PORT: 6379
+      REDIS_URL: redis://redis:6379
       REDIS_TIME: 3600
     ports:
       - 8080:8080
@@ -28,7 +27,6 @@ services:
       - ./redisdata:/data
     entrypoint: redis-server --appendonly yes
     restart: always
-    networks:
-      - api_server_default
+
 networks:
   api_server_default:
