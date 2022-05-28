@@ -16,8 +16,6 @@ services:
       - 8080:8080
     links:
       - redis
-    networks:
-      - api_server_default
 
   redis:
     image: redis:alpine
@@ -27,6 +25,3 @@ services:
       - ./redisdata:/data
     entrypoint: redis-server --appendonly yes
     restart: always
-
-networks:
-  api_server_default:
