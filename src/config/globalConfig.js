@@ -7,7 +7,6 @@ export default {
   URL_SERVICE:
     process.env.URL_SERVICE ||
     "https://farmanet.minsal.cl/maps/index.php/ws/getLocalesRegion?id_region=7",
-  REDIS_HOST: process.env.REDIS_HOST || "localhost",
-  REDIS_PORT: process.env.REDIS_PORT || 6379,
+  REDIS_URL: process.env.REDIS_URL || "redis://redis:6379",
   REDIS_TIME: process.env.REDIS_TIME || 200,
 };
