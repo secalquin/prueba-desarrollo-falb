@@ -3,6 +3,9 @@
 - Ejecutar Proyecto: **docker-compose up -d**
 - Petición de ejemplo: localhost:8080/api/v1/communes/santiago
 
+- Evidencia de ejecución y petición de contenedor: https://prnt.sc/nEuJBjzpwqJf
+- Evidencia de petición: https://prnt.sc/VecHrAXd3NSo
+
 ### SWAGGER URL
 
 - http://localhost:8080/api-docs/
@@ -24,4 +27,24 @@
 
 - Modo desarrollador: **npm run dev**
 
-- Evidencia de ejecución y petición de contenedor: https://prnt.sc/nEuJBjzpwqJf
+### Librerias Utilizadas
+
+#### Producción
+
+- **axios**
+- **core-js**
+- **dotenv**
+- **express**
+- **morgan**
+- **redis**
+- **swagger-ui-express**
+
+#### Producción
+
+- **@babel/cli**
+- **@babel/core**
+- **@babel/node**
+- **@babel/preset-env**
+- **jest**
+- **nodemon**
+- **supertest**
