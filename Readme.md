@@ -1,7 +1,16 @@
 ### Instalación
 
 - Instalar dependencias: **npm install**
-- 
+- Ejecutar Proyecto: **docker-compose up -d**
+
+#### VARIABLES DE AMBIENTE
+
+- NODE_ENV: development
+- URL_CURRENT: http://localhost
+- PORT: 8080
+- URL_SERVICE: https://farmanet.minsal.cl/maps/index.php/ws/getLocalesRegion?id_region=7
+- REDIS_URL: redis://redis:6379
+- REDIS_TIME: 3600
 
 ### Crear imagen de docker
 
