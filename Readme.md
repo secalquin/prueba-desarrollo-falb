@@ -1,6 +1,5 @@
-### Instalación
+### Ejecución del proyecto
 
-- Instalar dependencias: **npm install**
 - Ejecutar Proyecto: **docker-compose up -d**
 
 #### VARIABLES DE AMBIENTE
@@ -12,8 +11,12 @@
 - REDIS_URL: redis://redis:6379
 - REDIS_TIME: 3600
 
-### Crear imagen de docker
+### Ejecutar localmente
+- 1. **npm install**
+- 2. **npm run build**
+- 3. **npm run start**
 
-- Ingresar a la ruta raiz del proyecto.
-- Construir imagen de docker: **docker build -t node-babel .**
-- Ejecutar imagen de docker: **docker run -d --restart=always -p 8080:8080 node-babel**
+- Modo desarrollador: **npm run dev**
+
+
+- Evidencia de ejecución y petición de contenedor: https://prnt.sc/nEuJBjzpwqJf
